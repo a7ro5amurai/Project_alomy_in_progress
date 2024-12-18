@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Project_alomy</title>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            :root{
+                --beige: coral;
+                --gray: #999999;
+            }
+            @font-face {
+                font-family: "NewYork";
+                src: url("./assets/fonts/NewYork\ PERSONAL\ USE.otf");
+            }
+            @font-face {
+                font-family: "Inter";
+                src: url("./assets/fonts/Inter_28pt-Regular.ttf");
+            }
+            html{
+                font-size: 10px;
+                color: white;
+                background-color: #3C3636;
+            }
+            a {
+                text-decoration: none;
+                font-size: 1.3rem;
+            }
+            a:hover{
+                transform: scale(1.2);
+            }
+            button:hover{
+                color: black;
+                background-color:coral;
+            }
+            img{
+                max-width: 100%;
+                object-fit: cover;
+            }
+            p{
+                font-size: 1.7rem;
+            }
+            h4 {
+                font-size: 2rem;
+                font-family: "NewYork";
+            }
+            h3 {
+                font-size: 5rem;
+                font-family: "NewYork";
+            }
+            h2 {
+                /* font-size: 10rem; */
+                font-size: clamp(2vw, 8vw, 4vw);
+                font-family: "NewYork";
+            }
+            h1 {
+                font-size: clamp(3vw, 10vw, 10vw);
+                font-family: "NewYork";
+            }
+            #overlay:hover #visible {
+                visibility: visible;
+            }
+            #acting:hover #firstOverlay {
+                visibility: visible;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header class="flex justify-between items-center px-[2vw] py-[1vh] shadow-sm shadow-[#999999]">
+        <img src="./assets/img/6.png" alt="">
+        <nav class="flex gap-[2vw]">
+            <a class="text-[var(--beige)]" href="">HOME</a>
+            <a href="">ABOUT</a>
+            <a href="">WORK</a>
+            <a href="">SERVICE</a>
+            <a href="">BLOG</a>
+            <a href="">AWARD</a>
+            <a href="">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <section class="flex w-[65vw] mx-auto py-[10vh] border-b-2 border-[#999999] relative">
+            <article class="pt-[22.5vh] ">
+                <img class="w-[15vw] mb-[15vh]" src="./assets/img/22.jpeg" alt="">
+                <div class="flex">
+                    <img class="mr-[2vw] object-contain" src="./assets/img/10.png" alt="">
+                    <div>
+                        <img src="./assets/img/18.png" alt="">
+                        <h4 class="mb-[-1vh]">Fashion</h4>
+                        <h4>Week - 2020</h4>
+                    </div>
+                </div>
+            </article>
+            <article class="text-center ml-[-2.8vw] ">
+                <img class="mx-auto mb-[-5vh]" src="./assets/img/open lightbox.png" alt="">
+                <h1 class="mb-[-10vh] ">Unviraled</h1>
+                <h1 class="mb-[-5vh]">Shally</h1>
+                <h3 class="mb-[-2vh]">A Creative <span class="text-[var(--beige)]">Fashion</span></h3>
+                <h3 class="mb-[5vh]">Designer</h3>
+                <img class="ml-[10vw]" src="./assets/img/11.png" alt="">
+                <img class="mx-auto w-[15vw]" src="./assets/img/17.jpeg" alt="">
+            </article>
+            <article class="ml-[-2.5vw] z-[-1]">
+                <img class="h-[52.5vh] w-[20vw] mb-[20vh]" src="./assets/gif/daisy.gif" alt="">
+                <p><span class="text-[var(--gray)]">Working as a </span>creative and</p>
+                <p>outsource <span class="text-[var(--gray)]">your fashion design</span></p>
+                <p class="text-[var(--gray)]">project and get it quickly</p>
+                <p class="text-[var(--gray)]">done and delivered remotely</p>
+                <p class="text-[var(--gray)]">online</p>
+            </article>
+        </section>
+        <img class="absolute right-0 top-[75vh]" src="./assets/img/14.png" alt="">
+
+
+        <section class="w-[65vw] text-center mx-auto py-[10vh] border-b-2 border-[#999999] ">
+            <h2 class="mb-[-5vh]">Fashion for passion</h2>
+            <h2>& life style</h2>
+            <p class="text-[var(--gray)]">We formulate intentionally crafted supplements for thoughtful people like</p>
+            <p class="text-[var(--gray)]">you – using only the highest quality ingredients at effective doses.</p>
+            <p class="text-[var(--gray)]">Empowering you to take control of your wellness, look and feel great, and</p>
+            <p class="text-[var(--gray)] pb-[10vh]">live a life brimming with energy.</p>
+            <button class="border border-[#999999] p-[3vh] text-[1.6rem] rounded-full">Check My Works</button>
+        </section>
+        
+        <section class="w-[65vw] mx-auto pt-[10vh] border-b-2 border-[#999999] mb-[10vh]">
+            <h2 class="w-[10vw] leading-[0.9] mb-[3vh]">Selected works</h2>
+            <div class="flex justify-between items-center mb-[10vh]">
+                <div class="pl-[5vw] flex">
+                    <div class="w-[10vw] border-t-2 border-[#999999] mr-[2vw] mt-[2vh]"></div>
+                    <p class="w-[25vw]">Creative work of natural source from, We select only those modern works also my planet your products.</p>
+                </div>
+                <button class="border border-[#999999] p-[3vh] text-[1.6rem] rounded-full">View All Works</button>
+            </div>
+            <article class="flex justify-between items-baseline mb-[20vh]">
+
+                <div id="overlay" class="relative">
+                    <img class="w-[30vw] h-[80vh]" src="./assets/img/1.jpeg" alt="">
+                    <div id="visible" class="absolute top-0 bottom-0 left-0 right-0 p-[5vh] invisible">
+                        <img class="mb-[1vh]" src="./assets/img/18.png" alt="">
+                        <p class="font-semibold">DEVELOPMENT</p>
+                        <h3 class="w-[10vw] font-medium">Stefanie Brückler</h3>
+                    </div>
+                </div>
+
+                <div id="overlay" class="relative">
+                    <img class="w-[20vw] h-[60vh] mb-[3vh]" src="./assets/img/2.jpeg" alt="">
+                    <div id="visible" class="absolute top-0 bottom-0 left-0 right-0 p-[2.5vh] invisible">
+                        <img class="mb-[1vh]" src="./assets/img/18.png" alt="">
+                        <p class="font-semibold">Creative</p>
+                        <h3 class="w-[10vw] font-medium leading-[1]">Shelby Hypol</h3>
+                    </div>
+                </div>
+            </article>
+
+            <article class="flex justify-between items-baseline mb-[20vh]">
+
+                <div id="overlay" class="relative">
+                    <img class="w-[20vw] h-[60vh] mb-[3vh]" src="./assets/img/4.jpeg" alt="">
+                    <div id="visible" class="absolute top-0 bottom-0 left-0 right-0 p-[2.5vh] invisible">
+                        <img class="mb-[1vh]" src="./assets/img/18.png" alt="">
+                        <p class="font-semibold">WEB DESIGN</p>
+                        <h3 class="w-[10vw] font-medium leading-[1]">Visual identity</h3>
+                    </div>
+                </div>
+
+                <div id="overlay" class="relative">
+                    <img class="w-[30vw] h-[80vh]" src="./assets/img/5.jpeg" alt="">
+                    <div id="visible" class="absolute top-0 bottom-0 left-0 right-0 p-[5vh] invisible">
+                        <img class="mb-[1vh]" src="./assets/img/18.png" alt="">
+                        <p class="font-semibold">DEVELOPMENT</p>
+                        <h3 class="w-[10vw] font-medium ">Etienne Godiard</h3>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="flex justify-between mb-[1vh]">
+                <p>Service</p>
+                <p class="text-[#999999]">My Expertise In This Area</p>
+                <p>Let's Talk</p>
+            </article>
+        </section>
+        <section class="flex justify-between w-[65vw] mx-auto pb-[10vh] border-b-2 border-[#999999] mb-[10vh]">
+
+            <div class="flex items-end w-[17.5vw] relative">
+                <img class="w-[100%] h-[50vh] absolute" src="./assets/img/17.jpeg" alt="">
+            </div>
+
+            <div class="text-center">
+                <h2 id="costume" class="mb-[-2vh] hover:text-[coral] cursor-pointer">Costume</h2>
+                <p class="mb-[5vh] text-[#999999]">Cloth & Wearing</p>
+                <h2 id="acting" class="mb-[-2vh] hover:text-[coral] cursor-pointer relative">Acting</h2>
+                <p class="mb-[5vh] text-[#999999]">Character</p>
+                <h2 id="modelling" class="mb-[-2vh] hover:text-[coral] cursor-pointer">Modelling</h2>
+                <p class="mb-[5vh] text-[#999999]">Fashion & Life Style</p>
+                <h2 id="artist" class="mb-[-2vh] hover:text-[coral] cursor-pointer">Artist</h2>
+                <p class="mb-[5vh] text-[#999999]">Creative Designer</p>
+            </div>
+            <div class="w-[10vw] relative">
+                <img class="w-[100%] h-[30vh]" src="./assets/img/16.jpeg" alt="">
+            </div>
+        </section>
+
+        <section class="w-[65vw] mx-auto py-[10vh] border-b-2 border-[#999999] mb-[10vh]">
+            <h2 class="w-[10vw] leading-[0.9] mb-[3vh]">My Blogs</h2>
+            <div class="flex justify-between items-center mb-[10vh]">
+                <div class="pl-[5vw] flex">
+                    <div class="w-[10vw] border-t-2 border-[#999999] mr-[2vw] mt-[2vh]"></div>
+                    <p class="w-[25vw]">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.</p>
+                </div>
+                <button class="border border-[#999999] p-[3vh] text-[1.6rem] rounded-full">View All Blogs</button>
+            </div>
+            <section class="grid grid-cols-3 gap-[2vw]">
+                <div>
+                    <img class="h-[40vh] mb-[2vh]" src="./assets/img/7.jpeg" alt="">
+                    <p class="text-[#999999] mb-[1vh]">Marketing, Oct 24, 2022</p>
+                    <h4>Why Successful People Wear The</h4>
+                    <h4>Same Thing Every Day.</h4>
+                </div>
+                <div>
+                    <img class="h-[40vh] mb-[2vh]" src="./assets/img/8.jpeg" alt="">
+                    <p class="text-[#999999] mb-[1vh]">UI Design, Oct 24, 2022</p>
+                    <h4>The Quickest Way to Deliver Your</h4>
+                    <h4>Message? Make It Visual.</h4>
+                </div>
+                <div>
+                    <img class="h-[40vh] mb-[2vh]" src="./assets/img/9.jpeg" alt="">
+                    <p class="text-[#999999] mb-[1vh]">Marketing, Oct 24, 2022</p>
+                    <h4>The Easiest Way to Become a</h4>
+                    <h4>Successful Writer and Authors.</h4>
+                </div>
+            </section>
+            <section>
+                <div class="flex py-[2vh] border-t-2 border-[#999999]">
+                    <h3 class="w-[15vw] leading-[1]">DIVINE BEAUTY</h3>
+                    <p>Design is the art of applying</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    
+</body>
+</html>
